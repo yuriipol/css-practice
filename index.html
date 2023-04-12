@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Мій сайт</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Головна</a></li>
+          <li><a href="#">Про нас</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="shaking-text">Трясущийся текст</h1>
+
+      <div class="field">
+        <input type="text" name="first-name" autocomplete="off" required />
+        <label for="first-name" class="label-wrapper">
+          <span class="label-text">First name</span>
+        </label>
+      </div>
+
+      <h1 class="title">Hello Yurii Polupan!!!</h1>
+      <div class="cursor"></div>
+      <button type="button" class="button">Button</button>
+      <div class="box"></div>
+
+      <button class="my-btn">Натисни мене</button>
+    </main>
+  </body>
+  <script>
+    // const cursor = document.querySelector(".cursor");
+    // document.addEventListener("mousemove", (event) => {
+    //   cursor.style.cssText = `
+    //   top: ${event.y - 80}px;
+    //   left: ${event.x - 80}px;
+    //   `;
+    // });
+
+    const shakingText = document.querySelector(".shaking-text");
+    const spans = shakingText.textContent
+      .split("")
+      .map((char) => `<span>${char}</span>`);
+    shakingText.innerHTML = spans.join("");
+
+    const spanList = document.querySelectorAll(".shaking-text span");
+    const colors = [
+      "#F94144",
+      "#F3722C",
+      "#F9C74F",
+      "#90BE6D",
+      "#43AA8B",
+      "#577590",
+    ];
+    spanList.forEach((span) => {
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      span.style.setProperty("--color1", randomColor);
+      span.style.setProperty("--color2", randomColor);
+      span.style.setProperty("--color3", randomColor);
+      span.style.setProperty("--color4", randomColor);
+    });
+  </script>
+</html>
