@@ -22,7 +22,7 @@
     </header>
 
     <main>
-      <h1 class="shaking-text">Трясущийся текст</h1>
+      <!-- <h1 class="shaking-text">Трясущийся текст</h1> -->
 
       <div class="field">
         <input type="text" name="first-name" autocomplete="off" required />
@@ -48,27 +48,27 @@
     //   `;
     // });
 
-    const shakingText = document.querySelector(".shaking-text");
-    const spans = shakingText.textContent
-      .split("")
-      .map((char) => `<span>${char}</span>`);
-    shakingText.innerHTML = spans.join("");
+    // const shakingText = document.querySelector(".shaking-text");
+    // const spans = shakingText.textContent
+    //   .split("")
+    //   .map((char) => `<span>${char}</span>`);
+    // shakingText.innerHTML = spans.join("");
 
-    const spanList = document.querySelectorAll(".shaking-text span");
-    const colors = [
-      "#F94144",
-      "#F3722C",
-      "#F9C74F",
-      "#90BE6D",
-      "#43AA8B",
-      "#577590",
-    ];
-    spanList.forEach((span) => {
-      const randomColor = colors[Math.floor(Math.random() * colors.length)];
-      span.style.setProperty("--color1", randomColor);
-      span.style.setProperty("--color2", randomColor);
-      span.style.setProperty("--color3", randomColor);
-      span.style.setProperty("--color4", randomColor);
-    });
+    // const spanList = document.querySelectorAll(".shaking-text span");
+    // const colors = [
+    //   "#F94144",
+    //   "#F3722C",
+    //   "#F9C74F",
+    //   "#90BE6D",
+    //   "#43AA8B",
+    //   "#577590",
+    // ];
+    // spanList.forEach((span) => {
+    //   const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    //   span.style.setProperty("--color1", randomColor);
+    //   span.style.setProperty("--color2", randomColor);
+    //   span.style.setProperty("--color3", randomColor);
+    //   span.style.setProperty("--color4", randomColor);
+    // });
   </script>
 </html>

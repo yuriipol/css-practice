@@ -133,7 +133,7 @@ nav a:focus {
 } */
 
 .title {
-  font-size: 40px;
+  font-size: 20px;
   text-align: center;
 }
 .cursor {
@@ -320,7 +320,7 @@ nav a:focus {
   transform: translate(0%);
 }
 
-.shaking-text {
+/* .shaking-text {
   font-size: 2em;
   color: #f94144;
   cursor: pointer;
@@ -351,4 +351,4 @@ nav a:focus {
     transform: translateX(0);
     color: var(--color4);
   }
-}
+} */
